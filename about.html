@@ -72,9 +72,9 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="./">OpenData</a></li>
+        <li class=""><a href="./">OpenData</a></li>
 				<li class=""><a href="about.html">About</a></li>
-        <li class=""><a href="aiuto.html">Aiuto</a></li>
+        <li class="active"><a href="aiuto.html">Aiuto</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -83,64 +83,11 @@
 
 	<div class="container top-offset">
 		<div class="row clearfix">
-			<div class="col-md-3 col-sm-12 column">
-				<strong>Search</strong>
-				<div ex:role="facet" ex:facetClass="TextSearch">
-				</div>
-				<!--
-				<div ex:role="facet"
-				ex:expression=".titolo"
-				ex:facetLabel="titolo"
-				data-ex-missing-label="-" >
-			  </div>
-				<div ex:role="facet"
-				ex:expression=".argomento"
-				ex:facetLabel="argomento"
-				data-ex-missing-label="-" >
-			  </div>
-				-->
-				<div ex:role="facet"
-				ex:expression=".argomento"
-				ex:facetLabel="argomento"
-				ex:facetClass="Cloud">
-			  </div>
-				<div ex:role="facet"
-				ex:expression=".fonte"
-				ex:facetLabel="fonte"
-				ex:sortMode="value">
-			 </div>
-			</div>
-			<div class="col-md-9 col-sm-12 col-xs-12 column">
-				<div ex:role="viewPanel" style="padding: 0in;">
-					<div ex:role="exhibit-view"
-					ex:viewClass="Exhibit.TabularView"
-					ex:label="Table"
-					ex:columns=".titolo,.argomento,.fonte,.aggiornamento,.dataset"
-					ex:columnLabels="titolo, argomento, fonte, aggiornamento, scarica"
-					ex:columnFormats="list,list,list,list"
-					ex:sortColumn="4"
-					ex:sortAscending="true"
-					ex:tableStyler="tableStyler">
-					<div ex:role="exhibit-lens">
-						<div class="table-responsive">
-							<table class="table" ex:class-content=".territorio">
-								<tr>
-									<td><strong><span ex:content=".titolo" class="petrusino"></span></strong></td>
-									<td><span ex:content=".argomento"></span></td>
-									<td><span ex:content=".fonte"></td>
-									<td><span ex:content=".aggiornamento" style="color:red;"></span></td>
-									<td>
-										<a ex:href-content=".dataset" ex:onclick-subcontent="trackOutboundLink('{{.dataset}}'); return false;" target="_blank">
-											<strong><span>scarica</strong>
-										</a>
-									</td>
-								</tr>
-							</table>
-						</div>
-					</div>
-				</div>
+			<div class="col-md-12 col-sm-12 column">
+				<p>Processo di raccolta dei dataset, frequenza di aggiornamento,...
 			</div>
 		</div>
+	</div>
 		<hr>
 		</div>
 	</div>
