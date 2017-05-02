@@ -115,7 +115,7 @@
 					ex:viewClass="Exhibit.TabularView"
 					ex:label="Table"
 					ex:columns=".titolo,.argomento,.fonte,.aggiornamento,.dataset"
-					ex:columnLabels="titolo, argomento, fonte, aggiornamento, scarica"
+					ex:columnLabels="titolo, argomento, fonte, aggiornamento, visualizza"
 					ex:columnFormats="list,list,list,list"
 					ex:sortColumn="4"
 					ex:sortAscending="true"
@@ -130,7 +130,7 @@
 									<td><span ex:content=".aggiornamento" style="color:red;"></span></td>
 									<td>
 										<a ex:href-content=".dataset" ex:onclick-subcontent="trackOutboundLink('{{.dataset}}'); return false;" target="_blank">
-											<strong><span>scarica</strong>
+											<strong><span>visualizza</strong>
 										</a>
 									</td>
 								</tr>
