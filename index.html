@@ -108,15 +108,19 @@
 				ex:facetLabel="fonte"
 				ex:sortMode="value">
 			 </div>
+			 <div ex:role="facet"
+			 ex:expression=".tags"
+			 ex:facetLabel="tags"
+			</div>
 			</div>
 			<div class="col-md-9 col-sm-12 col-xs-12 column">
 				<div ex:role="viewPanel" style="padding: 0in;">
 					<div ex:role="exhibit-view"
 					ex:viewClass="Exhibit.TabularView"
 					ex:label="Table"
-					ex:columns=".argomento,.titolo,.fonte,.aggiornamento,.dataset"
-					ex:columnLabels="argomento, titolo, fonte, aggiornamento, visualizza"
-					ex:columnFormats="list,list,list,list"
+					ex:columns=".argomento,.titolo,.tags.fonte,.aggiornamento,.dataset"
+					ex:columnLabels="argomento, titolo, tags, fonte, aggiornamento, visualizza"
+					ex:columnFormats="list,list,list,list,list"
 					ex:sortColumn="0"
 					ex:sortAscending="true"
 					ex:tableStyler="tableStyler">
@@ -126,6 +130,7 @@
 								<tr>
 									<td><span ex:content=".argomento" class="petrusino"></span></td>
 									<td><strong><span ex:content=".titolo"></span></strong></td>
+									<td><span ex:content=".tags"></td>
 									<td><span ex:content=".fonte"></td>
 									<td><span ex:content=".aggiornamento" style="color:red;"></span></td>
 									<td>
