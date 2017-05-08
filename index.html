@@ -86,18 +86,6 @@
 				<strong>Search</strong>
 				<div ex:role="facet" ex:facetClass="TextSearch">
 				</div>
-				<!--
-				<div ex:role="facet"
-				ex:expression=".titolo"
-				ex:facetLabel="titolo"
-				data-ex-missing-label="-" >
-			  </div>
-				<div ex:role="facet"
-				ex:expression=".argomento"
-				ex:facetLabel="argomento"
-				data-ex-missing-label="-" >
-			  </div>
-				-->
 				<div ex:role="facet"
 				ex:expression=".argomento"
 				ex:facetLabel="argomento"
@@ -119,9 +107,9 @@
 					<div ex:role="exhibit-view"
 					ex:viewClass="Exhibit.TabularView"
 					ex:label="Table"
-					ex:columns=".argomento,.titolo,.tags,.fonte,.aggiornamento,.dataset"
-					ex:columnLabels="argomento, titolo, tags, fonte, aggiornamento, visualizza"
-					ex:columnFormats="list,list,list,list,list"
+					ex:columns=".titolo"
+					ex:columnLabels="Elenco dei dataset"
+					ex:columnFormats="list"
 					ex:sortColumn="0"
 					ex:sortAscending="true"
 					ex:tableStyler="tableStyler">
@@ -129,16 +117,21 @@
 						<div class="table-responsive">
 							<table class="table" ex:class-content=".territorio">
 								<tr>
-									<td><span ex:content=".argomento" class="petrusino"></span></td>
-									<td><strong><span ex:content=".titolo"></span></strong></td>
-									<td><span ex:content=".tags"></td>
-									<td><span ex:content=".fonte"></td>
-									<td><span ex:content=".aggiornamento" style="color:red;"></span></td>
-									<td>
-										<a ex:href-content=".dataset" ex:onclick-subcontent="trackOutboundLink('{{.dataset}}'); return false;" target="_blank">
-											<strong><span>visualizza</strong>
-										</a>
-									</td>
+								<td>
+									<a ex:href-content=".dataset" ex:onclick-subcontent="trackOutboundLink('{{.dataset}}'); return false;" target="_blank">
+										<strong><h3 ex:content=".titolo"></h3	></strong>
+									</a>
+									<strong>Argomento:</strong> <span ex:content=".argomento" class="petrusino"></span>
+									<br>
+									<strong>Tag:</strong> <span ex:content=".tags"></span>
+									<br>
+									<strong>Fonte:</strong> <span ex:content=".fonte"></span>
+									<br>
+									<strong>Ultimo aggiornamento:</strong> <span ex:content=".aggiornamento"></span>
+									<br>
+									<strong>Autori:</strong> <span ex:content=".autore"></span>
+									<br>
+								</td>
 								</tr>
 							</table>
 						</div>
