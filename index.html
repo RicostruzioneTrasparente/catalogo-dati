@@ -37,7 +37,7 @@
 
     <link rel="exhibit/data"
     type="application/jsonp"
-    href="https://spreadsheets.google.com/feeds/list/16ZqmTHI7Ayt2lqPk6JrVOPa--l8rp1IYxP2zgAp65Dg/owh35yg/public/basic?hl=en_US&alt=json-in-script"
+    href="https://spreadsheets.google.com/feeds/list/1P5YADRls98bNq2qxAn9tG-ZGCRm2gQVoBHXB9CW3vg8/ouknrvy/public/basic?hl=en_US&alt=json-in-script"
     ex:converter="googleSpreadsheets" />
 
 
@@ -89,7 +89,7 @@
 				ex:facetClass="Cloud">
 			  </div>
 				<div ex:role="facet"
-				ex:expression=".nome_fonte_primaria"
+				ex:expression=".fonte"
 				ex:facetLabel="fonte"
 				ex:sortMode="value">
 			 </div>
@@ -118,20 +118,19 @@
 							<table class="table" ex:class-content=".territorio">
 								<tr>
 								<td>
-									<a ex:href-content=".titolo" ex:onclick-subcontent="trackOutboundLink('{{.link_risorsa_modificata}}'); return false;" target="_blank">
+									<a ex:href-content=".dataset" ex:onclick-subcontent="trackOutboundLink('{{.dataset}}'); return false;" target="_blank">
 										<strong><h3 ex:content=".titolo"></h3	></strong>
 									</a>
 									<strong>Argomento:</strong> <span ex:content=".argomento" class="petrusino"></span>
 									<br>
 									<strong>Tag:</strong> <span ex:content=".tags"></span>
 									<br>
-									<strong>Fonte:</strong> <span ex:content=".nome_fonte_primaria"></span>
+									<strong>Fonte:</strong> <span ex:content=".fonte"></span>
 									<br>
-									<strong>Data di pubblicazione:</strong> <span ex:content=".data_di_pubblicazione"></span>
+									<strong>Ultimo aggiornamento:</strong> <span ex:content=".aggiornamento"></span>
 									<br>
-									<strong>Ultimo aggiornamento:</strong> <span ex:content=".data_di_ultimo_aggiornamento"></span>
+									<strong>Autori:</strong> <span ex:content=".autore"></span>
 									<br>
-
 								</td>
 								</tr>
 							</table>
